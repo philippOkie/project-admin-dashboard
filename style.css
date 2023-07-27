@@ -48,11 +48,14 @@ ul, li {list-style: none;}
 img {vertical-align: top;}
 h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
 
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Belanosima&display=swap');
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(187, 230, 228);
+    background: linear-gradient(to left bottom, rgba(235,219,253,255), #BF9ADF);
+    font-family: 'Belanosima', sans-serif;
 }
 
 .general-container { 
@@ -60,24 +63,35 @@ body {
     grid-template-columns: 20% 50% 30%;
     grid-template-rows: 100%;
 
-    border: solid 4px rgb(46, 45, 45);
+    background-color: rgba(22,18,52,255);
+    border-radius: 60px;
     height: 90%;
     width: 95%;
 }
 
 .sidebar { 
     grid-area: 1 / 1;
-    background-color: blue;
+    background-color: rgba(22,18,52,255);
+    color: #FCFAFD;
+    border-radius: 60px 0px 0px 60px;
+    border: solid 15px rgba(22,18,52,255);
+    border-right: 0px;
 }
 
 .central-content {
     grid-area: 1 / 2;
-    background-color: blueviolet;
+    background-color: #FCFAFD;
+    border: solid 15px rgba(22,18,52,255);
+    border-radius: 60px 0px 0px 60px;
+    border-right: 0px;
 }
 
 .right-side-content {
     grid-area: 1 / 3;
-    background-color: brown;
+    background-color: #FCFAFD;
+    border-radius: 0px 60px 60px 0px;
+    border: solid 15px rgba(22,18,52,255);
+    border-left: 0px;
 }
 
 .arrow-right {
@@ -85,7 +99,6 @@ body {
     height: 0; 
     border-top: 60px solid transparent;
     border-bottom: 60px solid transparent;
-    
     border-left: 60px solid rgb(255, 255, 255);
 }
 
