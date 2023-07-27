@@ -54,44 +54,43 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to left bottom, rgba(235,219,253,255), #BF9ADF);
+    background: linear-gradient(to left bottom, #FCFAFD, #BF9ADF);
     font-family: 'Belanosima', sans-serif;
 }
 
 .general-container { 
     display: grid;
-    grid-template-columns: 20% 50% 30%;
+    grid-template-columns: 19% 49% 32%;
     grid-template-rows: 100%;
 
-    background-color: rgba(22,18,52,255);
-    border-radius: 60px;
+    border-radius: 3.5rem;
     height: 90%;
-    width: 95%;
+    width: 90%;
+    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
 }
 
 .sidebar { 
     grid-area: 1 / 1;
-    background-color: rgba(22,18,52,255);
     color: #FCFAFD;
-    border-radius: 60px 0px 0px 60px;
-    border: solid 15px rgba(22,18,52,255);
+    border-radius: 3.5rem 0px 0px 3.5rem;
     border-right: 0px;
+    font-size: 150%;
+    background: radial-gradient(circle at top right, #342c50, rgba(22,18,52,255));
 }
 
 .central-content {
     grid-area: 1 / 2;
     background-color: #FCFAFD;
-    border: solid 15px rgba(22,18,52,255);
-    border-radius: 60px 0px 0px 60px;
-    border-right: 0px;
 }
 
 .right-side-content {
     grid-area: 1 / 3;
     background-color: #FCFAFD;
-    border-radius: 0px 60px 60px 0px;
-    border: solid 15px rgba(22,18,52,255);
+    border-radius: 0px 3.5rem 3.5rem 0px;
     border-left: 0px;
+    height: 100%;
+    padding-left: 2rem;
+    padding-top: 2rem;
 }
 
 .arrow-right {
@@ -99,10 +98,34 @@ body {
     height: 0; 
     border-top: 60px solid transparent;
     border-bottom: 60px solid transparent;
-    border-left: 60px solid rgb(255, 255, 255);
+    border-left: 60px solid #FCFAFD;
 }
 
 .dots {
-    width: 30px;
-    height: 30px;
+    width: 2rem;
+    height: 2rem;
 }
+
+.sbGap {
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.avatar {
+    width: 7rem;
+    height: 7rem;    
+    background-color: #701bec;
+    border-radius: 1em;
+    margin-bottom: 200px;
+}
+
+.m-imgs {
+    width: 2rem;
+    height: 2rem;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+
+/* .library, .menu {
+    font-size: 150%;
+} */
