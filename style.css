@@ -52,6 +52,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(187, 230, 228);
 }
 
 .general-container { 
@@ -59,7 +60,7 @@ body {
     grid-template-columns: 20% 50% 30%;
     grid-template-rows: 100%;
 
-    border: solid 4px red;
+    border: solid 4px rgb(46, 45, 45);
     height: 90%;
     width: 95%;
 }
@@ -79,3 +80,16 @@ body {
     background-color: brown;
 }
 
+.arrow-right {
+    width: 0; 
+    height: 0; 
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    
+    border-left: 60px solid rgb(255, 255, 255);
+}
+
+.dots {
+    width: 30px;
+    height: 30px;
+}
