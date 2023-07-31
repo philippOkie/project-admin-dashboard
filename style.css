@@ -40,9 +40,9 @@ input, button, textarea {
 input::-ms-clear {display: none;}
 button {cursor: pointer;}
 button::-moz-focus-inner {padding: 0; border: 0;} 
-a, a:visited {text-decoration: none;}
+a, a:visited {text-decoration: none; font-size: small;}
 a:hover {text-decoration: none;}
-ul, li {list-style: none;}
+ul {list-style: none;}
 img {vertical-align: top;}
 h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
 
@@ -86,6 +86,7 @@ body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 50% auto 20% auto 1fr;
+    overflow: scroll;
 }
 
 .right-side-content {
@@ -98,17 +99,26 @@ body {
     padding-top: 2rem;
 }
 
-.arrow-right {
-    width: 0; 
-    height: 0; 
-    border-top: 60px solid transparent;
-    border-bottom: 60px solid transparent;
-    border-left: 60px solid #FCFAFD;
-}
 
 .dots {
     width: 2rem;
     height: 2rem;
+    display: flex;
+    align-self: center;
+}
+
+.dots {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: transparent;
+}
+
+.dot {
+    width: 4px;
+    height: 4px;
+    background-color: black;
+    border-radius: 10px;
 }
 
 .sbGap {
@@ -119,6 +129,7 @@ body {
 .sbGapTwo {
     margin-left: 2rem;
     margin-top: 2rem;
+    
 }
 
 .avatar {
@@ -177,10 +188,13 @@ img {
 
 .sdbr {
     opacity: 0.5;
+    transition: 0.4s;
+    background-color: transparent;
 }
 
 .sdbr:hover{
     opacity: 1;
+    margin-left: 5px;
 }
 
 .m-imgs {
@@ -197,28 +211,32 @@ img {
 }
 
 .card {
-    width: 8em;
-    height: 8em;
-    border: solid 2px #342c50;
+    width: 10em;
+    height: 10em;
+    border-radius: 1.5em;
+    background-color: #701bec;
 }
 
 .card-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    
 }
 
 .song {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 .dkamiefnouebub {
-    width: 85%;
+    width: 100%;
     height: 90%;
-    background-color: red;
+    background-color: #701bec;
+    border-radius: 2em;
 }
 
 .adcont {
@@ -227,4 +245,32 @@ img {
     align-items: center;
     width: 100%;
     height: 100%;
+}
+
+.twoSides {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+a:link {
+    color: black;
+    opacity: 0.5;
+}
+  
+.playSongBtn {
+
+}
+
+.search {
+    border: solid 2px black;
 }
