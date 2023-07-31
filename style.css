@@ -271,10 +271,18 @@ a:link {
     height: 3em;
     width: 3em;
     border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .search {
-    border: solid 2px black;
+    background: url(img/loupe.png);
+    background-size: 1.5em;
+    background-repeat: no-repeat;
+    padding-left: 1.5em;
+    height: 1.5em;
+    
 }
 
 .songImg {
@@ -302,4 +310,18 @@ a:link {
     font-size: medium;
     font-weight: bold;
     opacity: 0.6;
+}
+
+.triangle {
+    width: 0; 
+    height: 0; 
+    border-top: 0.75em solid transparent;
+    border-bottom: 0.75em solid transparent;
+    border-left: 0.75em solid white;
+    border-radius: 10px
+}
+
+.bell {
+    width: 1.5rem;
+    height: 1.5rem;
 }
