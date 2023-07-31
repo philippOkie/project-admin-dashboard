@@ -40,7 +40,7 @@ input, button, textarea {
 input::-ms-clear {display: none;}
 button {cursor: pointer;}
 button::-moz-focus-inner {padding: 0; border: 0;} 
-a, a:visited {text-decoration: none; font-size: small;}
+a, a:visited {text-decoration: none; font-size: 0.72em;}
 a:hover {text-decoration: none;}
 ul {list-style: none;}
 img {vertical-align: top;}
@@ -87,6 +87,7 @@ body {
     grid-template-columns: 100%;
     grid-template-rows: 50% auto 20% auto 1fr;
     overflow: scroll;
+    overflow-x: hidden;
 }
 
 .right-side-content {
@@ -257,10 +258,8 @@ img {
     font-weight: 600;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
 
+::-webkit-scrollbar {display: none;}
 
 a:link {
     color: black;
@@ -268,9 +267,39 @@ a:link {
 }
   
 .playSongBtn {
-
+    background-color: rgba(212,161,255,255);
+    height: 3em;
+    width: 3em;
+    border-radius: 100px;
 }
 
 .search {
     border: solid 2px black;
+}
+
+.songImg {
+    background-color: #701bec;
+    width: 5.5em;
+    height: 5.5em;
+    margin-right: 8em;
+    border-radius: 1em;
+}
+
+.microMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.songName {
+    font-size: large;
+    margin-bottom: 5px;
+}
+
+
+.fs {
+    font-size: medium;
+    font-weight: bold;
+    opacity: 0.6;
 }
